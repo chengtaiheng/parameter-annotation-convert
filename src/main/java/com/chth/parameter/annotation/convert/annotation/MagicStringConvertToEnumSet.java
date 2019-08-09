@@ -26,7 +26,7 @@ public @interface MagicStringConvertToEnumSet {
 
 
     /**
-     * 将字符串转换为枚举集合
+     * 将字符串转换为枚举集合，如果是全部则转换成包含所有PayOffType类型的集合，如果不是则转换成包含有相对应PayOffType类型的集合
      */
     public static class FormmaterFactory implements AnnotationFormatterFactory<MagicStringConvertToEnumSet> {
 
